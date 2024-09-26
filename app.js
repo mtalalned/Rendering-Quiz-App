@@ -68,9 +68,13 @@ async function getDatafromAPI (){
         radio.forEach((items , index)=>{
             items.addEventListener ('change' , function (){
                 if (items.checked && items.value === ConvertedApiData.results[resultArrayNo].correct_answer){
-                    answerDiv.innerHTML = 'Correct Answer'
+                    answerDiv.innerHTML = `
+                    <h3 class='correct'> Correct Answer </h3>
+                    `
                 } else {
-                    answerDiv.innerHTML = 'Wrong Answer'
+                    answerDiv.innerHTML = `
+                    <h3 class='wrong'> Wrong Answer </h3>
+                    `
                 }
             })
         })
@@ -95,9 +99,13 @@ nextbutton.addEventListener ('click' , ()=>{
         radio.forEach((items , index)=>{
             items.addEventListener ('change' , function (){
                 if (items.checked && items.value === ConvertedApiData.results[resultArrayNo].correct_answer){
-                    answerDiv.innerHTML = 'Correct Answer'
+                    answerDiv.innerHTML = `
+                    <h3 class='correct'> Correct Answer </h3>
+                    `
                 } else {
-                    answerDiv.innerHTML = 'Wrong Answer'
+                    answerDiv.innerHTML = `
+                    <h3 class='wrong'> Wrong Answer </h3>
+                    `
                 }
             })
         })
@@ -116,9 +124,13 @@ backbutton.addEventListener ('click' , ()=>{
         radio.forEach((items , index)=>{
             items.addEventListener ('change' , function (){
                 if (items.checked && items.value === ConvertedApiData.results[resultArrayNo].correct_answer){
-                    answerDiv.innerHTML = 'Correct Answer'
+                    answerDiv.innerHTML = `
+                    <h3 class='correct'> Correct Answer </h3>
+                    `
                 } else {
-                    answerDiv.innerHTML = 'Wrong Answer'
+                    answerDiv.innerHTML = `
+                    <h3 class='wrong'> Wrong Answer </h3>
+                    `
                 }
             })
         })
